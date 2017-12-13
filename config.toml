@@ -1,0 +1,14 @@
+linkPrefix = "/signhash-contracts-docs"
+name = "signhash-contracts-docs"
+version = "1.0.0"
+description = "SignHash Contracts Documentation"
+buildTime = 2017-12-13T23:01:12.046Z
+target = "."
+src = "node_modules/signhash-contracts/contracts/*.sol"
+dir = "pages/docs"
+out = "docs"
+author = "Jakub Stefanski"
+homepage = "https://github.com/SignHash/signhash-contracts-docs#readme"
+license = "MIT"
+
+[interaction]

@@ -1,0 +1,6 @@
+{
+  "target": ".",
+  "src": "node_modules/signhash-contracts/contracts/*.sol",
+  "dir": "pages/docs",
+  "out": "docs"
+}
