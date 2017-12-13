@@ -1,0 +1,14 @@
+linkPrefix = "/doxity-simpleton"
+name = "signhash-contracts-docs"
+version = "1.0.0"
+description = "SignHash Contracts Documentation"
+buildTime = 2017-12-13T22:54:47.926Z
+target = "."
+src = "node_modules/signhash-contracts/contracts/*.sol"
+dir = "pages/docs"
+out = "docs"
+author = "Jakub Stefanski"
+homepage = "https://github.com/SignHash/signhash-contracts-docs#readme"
+license = "MIT"
+
+[interaction]
