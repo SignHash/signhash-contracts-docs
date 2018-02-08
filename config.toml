@@ -1,8 +1,8 @@
-linkPrefix = "/signhash-contracts-docs"
+linkPrefix = ""
 name = "signhash-contracts-docs"
 version = "1.0.0"
 description = "SignHash Contracts Documentation"
-buildTime = 2017-12-13T23:01:12.046Z
+buildTime = 2018-02-08T23:35:26.839Z
 target = "."
 src = "node_modules/signhash-contracts/contracts/*.sol"
 dir = "pages/docs"
