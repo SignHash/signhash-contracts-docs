@@ -1,8 +1,8 @@
 // tslint:disable:no-console
 
-import { spawn } from 'child_process';
-import { createWriteStream } from 'fs';
-import { join } from 'path';
+const { spawn } = require('child_process');
+const { createWriteStream } = require('fs');
+const { join } = require('path');
 
 const args = [
   'run',
@@ -14,7 +14,7 @@ const outPath = join(__dirname, '..', 'docs');
 const outStream = createWriteStream(outPath);
 
 const child = spawn('docker-compose', args, {
-  cwd: join(__dirname, '..', 'docker')
+  cwd: join(__dirname, 'docker')
 });
 
 child.stdout.pipe(outStream);
