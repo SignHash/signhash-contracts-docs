@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+  doxity:
+    build:
+      context: .
+      dockerfile: doxity/Dockerfile
+    volumes:
+      - ../:/project
+    working_dir: '/project'
+    entrypoint: 'npm run docs'
