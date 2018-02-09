@@ -1,10 +1,10 @@
-import React, { Component, PropTypes } from 'react'
-import DocumentTitle from 'react-document-title'
-import { config } from 'config'
+import React, { Component, PropTypes } from 'react';
+import DocumentTitle from 'react-document-title';
+import { config } from 'config';
 
 export default class Md extends Component {
   render() {
-    const post = this.props.route.page.data
+    const post = this.props.route.page.data;
 
     return (
       <DocumentTitle title={config.name}>
@@ -13,10 +13,10 @@ export default class Md extends Component {
           <div dangerouslySetInnerHTML={{ __html: post.body }} />
         </div>
       </DocumentTitle>
-    )
+    );
   }
 }
 
 Md.propTypes = {
-  route: PropTypes.object,
-}
+  route: PropTypes.object
+};
