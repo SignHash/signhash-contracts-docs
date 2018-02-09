@@ -1,11 +1,11 @@
-exports.modifyWebpackConfig = (config) => {
+exports.modifyWebpackConfig = config => {
   config.merge({
     resolve: {
       alias: {
-        'semantic-ui-react': '@hitchcott/semantic-ui-react',
-      },
-    },
+        'semantic-ui-react': '@hitchcott/semantic-ui-react'
+      }
+    }
   });
 
-  return config
+  return config;
 };

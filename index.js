@@ -1,11 +1,7 @@
 const { spawn } = require('child_process');
 const { join } = require('path');
 
-const args = [
-  'run',
-  '--rm',
-  'doxity'
-];
+const args = ['run', '--rm', 'doxity'];
 
 const outPath = join(__dirname, '..', 'dist');
 
