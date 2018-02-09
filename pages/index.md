@@ -20,5 +20,5 @@ After finishing, it is recommended to change ownership of the generated files be
 docker mounts the volume as root.
 
 ```
-sudo chown -R $USER:$USER docs/
+sudo chown -R $USER:$USER docs/ pages/ config.toml
 ```
