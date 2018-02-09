@@ -23,7 +23,7 @@
     "start": "node index.js",
     "build": "gatsby build --prefix-links",
     "doxity": "doxity build",
-    "format": "prettier --write \"**/*.js\""
+    "format": "prettier --write \"**/*.js\" \"**/*.css\""
   },
   "devDependencies": {
     "@digix/doxity": "^0.5.2",
