@@ -9,7 +9,7 @@ SignHash Contracts Documentation
 
 # Generating documentation
 
-Documentation is generated in `/docs` folder.
+Documentation is generated in `/dist` folder.
 
 ```
 npm install
@@ -20,5 +20,5 @@ After finishing, it is recommended to change ownership of the generated files be
 docker mounts the volume as root.
 
 ```
-sudo chown -R $USER:$USER docs/ pages/ config.toml
+sudo chown -R $USER:$USER dist/ pages/ config.toml
 ```
