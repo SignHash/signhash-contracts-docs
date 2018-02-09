@@ -1,7 +1,4 @@
-// tslint:disable:no-console
-
 const { spawn } = require('child_process');
-const { createWriteStream } = require('fs');
 const { join } = require('path');
 
 const args = [
@@ -10,18 +7,14 @@ const args = [
   'doxity'
 ];
 
-const outPath = join(__dirname, '..', 'docs');
-const outStream = createWriteStream(outPath);
+const outPath = join(__dirname, '..', 'dist');
 
 const child = spawn('docker-compose', args, {
   cwd: join(__dirname, 'docker')
 });
 
-child.stdout.pipe(outStream);
-child.stderr.on('data', chunk => {
-  console.error(chunk.toString());
-});
-
+child.stdout.pipe(process.stdout);
+child.stderr.pipe(process.stderr);
 child.on('close', code => {
   if (code !== 0) {
     console.error('Failed to generate docs: ', code);
