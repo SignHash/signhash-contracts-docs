@@ -11,7 +11,7 @@ SignHash Contracts Documentation
 
 Documentation is generated in `/dist` folder.
 
-```
+``` shell
 npm install
 npm start
 ```
@@ -22,3 +22,11 @@ docker mounts the volume as root.
 ```
 sudo chown -R $USER:$USER dist/ pages/ config.toml
 ```
+
+# Browsing generated docs locally
+
+``` shell
+npm run serve
+```
+
+Documentation is available at `http://localhost:5000`
