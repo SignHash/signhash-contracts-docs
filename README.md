@@ -3,7 +3,7 @@ SignHash Contracts Documentation
 
 # Requirements
 
-- docker
+- docker > 1.13.1
 - docker-compose
 - npm
 
