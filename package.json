@@ -1,0 +1,43 @@
+{
+  "name": "signhash-contracts-docs",
+  "version": "1.0.0",
+  "description": "SignHash Contracts Documentation",
+  "author": {
+    "name": "Jakub Stefanski",
+    "url": "https://jakubstefanski.com"
+  },
+  "contributors": [
+    {
+      "name": "Marcin Biernat",
+      "url": "https://marcinbiernat.pl"
+    }
+  ],
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SignHash/signhash-contracts-docs.git"
+  },
+  "homepage": "https://github.com/SignHash/signhash-contracts-docs#readme",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js",
+    "build": "gatsby build --prefix-links",
+    "doxity": "doxity build",
+    "format": "prettier --write \"**/*.{js,jsx,css}\"",
+    "serve": "serve dist"
+  },
+  "devDependencies": {
+    "@digix/doxity": "^0.5.2",
+    "@hitchcott/semantic-ui-react": "^0.61.1",
+    "eslint": "^3.8.1",
+    "gatsby": "^0.12.18",
+    "highlight.js": "^9.7.0",
+    "highlightjs-solidity": "^1.0.5",
+    "prettier": "^1.10.2",
+    "react-document-title": "^2.0.1",
+    "react-markdown": "^2.4.2",
+    "serve": "^6.4.9",
+    "signhash-contracts": "^0.2.1",
+    "sort-by": "^1.1.1"
+  }
+}
